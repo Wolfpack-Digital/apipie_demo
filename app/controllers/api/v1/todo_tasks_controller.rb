@@ -8,7 +8,7 @@ class Api::V1::TodoTasksController < Api::V1::BaseController
   end
 
   def create
-    TodoTask.create!(todo_task_params.merge(user_id: current_user.id))
+    TodoTask.create!(todo_task_params.merge(user: current_user))
 
     head :created
   end
