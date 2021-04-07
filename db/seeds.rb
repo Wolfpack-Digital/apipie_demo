@@ -13,5 +13,6 @@ Doorkeeper::Application.create!(
   uid: '26fc14bf604ca426be1c43785714bbad',
   confidential: false,
   created_at: Date.today.to_s,
-  updated_at: Date.today.to_s
+  updated_at: Date.today.to_s,
+  redirect_uri: 'http://localhost:3000'
 )
