@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Api::V1::TodoTasksController < Api::V1::BaseController
+  include Api::V1::TodoTasksControllerDoc
+
   before_action :set_todo_task, only: %i[update destroy]
 
   def index
